@@ -4,6 +4,20 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Grape+Nuts&display=swap"
+      rel="stylesheet"
+    />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -18,7 +32,7 @@
     <header class="bg-black">
       <nav class="navbar navbar-expand-lg bg-body-black">
         <div class="container-fluid">
-          <img src="./assets/img/logo-header.png" alt="logo" />
+          <img src="./assets/img/logo-header.png" alt="logo" id="logo" />
           <button
             class="navbar-toggler"
             type="button"
@@ -33,15 +47,15 @@
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav text-end">
               <li class="nav-item">
-                <a class="nav-link text-white" aria-current="page" href="#"
+                <a class="nav-link text-white fs-5" aria-current="page" href="#"
                   >Home</a
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link text-white" href="#">Productos</a>
+                <a class="nav-link text-white fs-5" href="#">Productos</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link text-white" href="#">Contacto</a>
+                <a class="nav-link text-white fs-5" href="#">Contacto</a>
               </li>
             </ul>
           </div>
@@ -58,179 +72,204 @@
         </ul>
       </nav>-->
       <div>
-        <img src="./assets/img/banner-web.png" class="img-fluid" alt="banner" />
+        <img
+          src="./assets/img/banner-web.png"
+          class="img-fluid w-100 mt-3"
+          alt="banner"
+        />
       </div>
       <div class="d-flex flex-row justify-content-end p-5">
-        <button type="button" class="btn btn-danger">
+        <button type="button" class="btn btn-danger fs-5">
           Pedí una picada personalizada
         </button>
       </div>
     </header>
     <main>
       <!--PICADAS-->
-      <section class="">
-        <div class="bg-danger w-50"><h2>Nuestras Picadas de Autor</h2></div>
-        <div class="fs-3 d-flex justify-content-end">
-          <p class="">Una opción para cada encuentro</p>
+      <section id="picadas">
+        <div class="bg-danger w-50">
+          <h2 class="sectionTitle text-white text-center" id="picadTitle">
+            Nuestras Picadas de Autor
+          </h2>
         </div>
-        <div>
-          <div
-            id="carouselExampleRide"
-            class="carousel slide"
-            data-bs-ride="true"
-          >
-            <div class="carousel-inner">
-              <div class="carousel-item active w-25">
-                <div class="">
-                  <div class="card text-bg-dark">
-                    <img
-                      src="./assets/img/picadas/edit_picada_01.png"
-                      class="card-img object-fit-contain border rounded"
-                      alt="..."
-                    />
-                    <div class="card-img-overlay">
-                      <h5 class="card-title">Card title</h5>
-                      <p class="card-text">
-                        This is a wider card with supporting text below as a
-                        natural lead-in to additional content. This content is a
-                        little bit longer.
-                      </p>
-                      <p class="card-text">
-                        <small>Last updated 3 mins ago</small>
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="carousel-item w-25">
-                <div class="">
-                  <div class="card text-bg-dark">
-                    <img
-                      src="./assets/img/picadas/edit_picada_02.png"
-                      class="card-img object-fit-contain border rounded"
-                      alt="..."
-                    />
-                    <div class="card-img-overlay">
-                      <h5 class="card-title">Card title</h5>
-                      <p class="card-text">
-                        This is a wider card with supporting text below as a
-                        natural lead-in to additional content. This content is a
-                        little bit longer.
-                      </p>
-                      <p class="card-text">
-                        <small>Last updated 3 mins ago</small>
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="carousel-item w-25">
-                <div class="">
-                  <div class="card text-bg-dark">
-                    <img
-                      src="./assets/img/picadas/edit_picada_03.png"
-                      class="card-img object-fit-contain border rounded"
-                      alt="..."
-                    />
-                    <div class="card-img-overlay">
-                      <h5 class="card-title">Card title</h5>
-                      <p class="card-text">
-                        This is a wider card with supporting text below as a
-                        natural lead-in to additional content. This content is a
-                        little bit longer.
-                      </p>
-                      <p class="card-text">
-                        <small>Last updated 3 mins ago</small>
-                      </p>
-                    </div>
-                  </div>
+        <div class="fs-3 d-flex justify-content-end">
+          <p class="sectionSubtitle fs-2 text-white">
+            Una opción para cada encuentro
+          </p>
+        </div>
+        <div
+          id="carouselExampleAutoplaying"
+          class="carousel slide"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="card cardPicadas col">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
+                  </p>
                 </div>
               </div>
             </div>
-            <button
-              class="carousel-control-prev"
-              type="button"
-              data-bs-target="#carouselExampleRide"
-              data-bs-slide="prev"
-            >
-              <span
-                class="carousel-control-prev-icon"
-                aria-hidden="true"
-              ></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button
-              class="carousel-control-next"
-              type="button"
-              data-bs-target="#carouselExampleRide"
-              data-bs-slide="next"
-            >
-              <span
-                class="carousel-control-next-icon"
-                aria-hidden="true"
-              ></span>
-              <span class="visually-hidden">Next</span>
-            </button>
+            <div class="carousel-item">
+              <div class="card w-50 cardPicadas">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="card w-50 cardPicadas">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="card w-50 cardPicadas">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="card w-50 cardPicadas">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="card w-50 cardPicadas">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="card w-50 h-100 cardPicadas">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleAutoplaying"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleAutoplaying"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
         </div>
       </section>
       <!--VINOS-->
-      <section class="bg-black">
-        <div class="bg-danger w-25 text-white"><h2>Nuestros vinos</h2></div>
+      <section id="vinos">
+        <div class="bg-danger w-25 text-white">
+          <h2 class="sectionTitle text-center" id="vinosTitle">
+            Nuestros vinos
+          </h2>
+        </div>
         <div class="fs-3 d-flex justify-content-end">
-          <p class="text-white">¿Con qué vas a acompañar tu picada hoy?</p>
+          <p class="text-white sectionSubtitle fs-2">
+            ¿Con qué vas a acompañar tu picada hoy?
+          </p>
         </div>
         <div class="card-group me-5 ms-5">
-          <div class="card m-5 bg-dark">
+          <div class="card m-5 mb-10 bg-dark">
             <img
               src="./assets/img/vinos/vinosB.png"
               class="card-img-top p-3"
               alt="Vinos Blancos"
             />
-            <div class="card-body">
+            <div class="card-body align-items-center">
               <h5 class="card-title text-center text-white fs-2">
-                Vinos Blancos
+                VINOS BLANCOS
               </h5>
             </div>
           </div>
-          <div class="card m-5 bg-dark">
+          <div class="card m-5 mb-10 bg-dark">
             <img
               src="./assets/img/vinos/vinosT.png"
               class="card-img-top p-3"
               alt="Vinos Tintos"
             />
-            <div class="card-body">
+            <div class="card-body align-items-center">
               <h5 class="card-title text-center text-white fs-2">
-                Vinos Tintos
+                VINOS TINTOS
               </h5>
             </div>
           </div>
-          <div class="card m-5 bg-dark">
+          <div class="card m-5 mb-10 bg-dark">
             <img
               src="./assets/img/vinos/aperitivos.png"
               class="card-img-top p-3"
               alt="Aperitivos"
             />
-            <div class="card-body">
-              <h5 class="card-title text-center text-white fs-2">Aperitivos</h5>
+            <div class="card-body align-items-center">
+              <h5 class="card-title text-center text-white fs-2">APERITIVOS</h5>
             </div>
           </div>
         </div>
       </section>
       <!--ALMACEN-->
-      <section>
-        <div class="bg-danger w-25 text-white"><h2>Almacén</h2></div>
-        <div class="fs-3 d-flex justify-content-end">
-          <p class="">Gran variedad de productos</p>
+      <section id="almacen">
+        <div class="bg-danger w-25 text-white">
+          <h2 class="sectionTitle text-center" id="almacTitle">Almacén</h2>
         </div>
-        <div class="row d-flex justify-content-evenly">
-          <img
-            src="./assets/img/almacen/almacen.png"
-            class="img-thumbnail col-1 w-50"
-            alt="Almacén"
-          />
-          <div class="col-2">
-            <ul>
+        <div class="fs-3 d-flex justify-content-end">
+          <p class="sectionSubtitle fs-2 text-white">
+            Gran variedad de productos
+          </p>
+        </div>
+        <div class="d-flex justify-content-evenly">
+          <div class="w-50 p-4" id="almacImg">
+            <img
+              src="./assets/img/almacen/almacen.png"
+              class="img-thumbnail"
+              alt="Almacén"
+            />
+          </div>
+          <div>
+            <ul class="text-white p-5" id="almacList">
               <li>Galletitas</li>
               <li>Golosinas</li>
               <li>Papas Fritas</li>
