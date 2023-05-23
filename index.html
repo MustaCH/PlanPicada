@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Plan Picada</title>
+  </head>
+  <body>
+    <!--ENCABEZADO Y NAV-->
+    <header class="bg-black">
+      <nav class="d-flex flex-row justify-content-between">
+        <logo class="p-3">
+          <img src="./assets/img/logo-header.png" alt="logo" />
+        </logo>
+        <ul class="d-flex flex-row justify-content-between align-items-center">
+          <li class="pe-5 text-light">HOME</li>
+          <li class="pe-5 text-light">PRODUCTOS</li>
+          <li class="pe-5 text-light">CONTACTO</li>
+        </ul>
+      </nav>
+      <div>
+        <img src="./assets/img/banner-web.png" class="img-fluid" alt="banner" />
+      </div>
+      <div class="d-flex flex-row justify-content-end p-5">
+        <button type="button" class="btn btn-danger">
+          Pedí una picada personalizada
+        </button>
+      </div>
+    </header>
+    <main>
+      <!--PICADAS-->
+      <section class="">
+        <div class="bg-danger w-50"><h2>Nuestras Picadas de Autor</h2></div>
+        <div class="fs-3 d-flex justify-content-end">
+          <p class="">Una opción para cada encuentro</p>
+        </div>
+        <div>
+          <div
+            id="carouselExampleRide"
+            class="carousel slide"
+            data-bs-ride="true"
+          >
+            <div class="carousel-inner">
+              <div class="carousel-item active w-25">
+                <div class="">
+                  <div class="card text-bg-dark">
+                    <img
+                      src="./assets/img/picadas/edit_picada_01.png"
+                      class="card-img object-fit-contain border rounded"
+                      alt="..."
+                    />
+                    <div class="card-img-overlay">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">
+                        This is a wider card with supporting text below as a
+                        natural lead-in to additional content. This content is a
+                        little bit longer.
+                      </p>
+                      <p class="card-text">
+                        <small>Last updated 3 mins ago</small>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item w-25">
+                <div class="">
+                  <div class="card text-bg-dark">
+                    <img
+                      src="./assets/img/picadas/edit_picada_02.png"
+                      class="card-img object-fit-contain border rounded"
+                      alt="..."
+                    />
+                    <div class="card-img-overlay">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">
+                        This is a wider card with supporting text below as a
+                        natural lead-in to additional content. This content is a
+                        little bit longer.
+                      </p>
+                      <p class="card-text">
+                        <small>Last updated 3 mins ago</small>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item w-25">
+                <div class="">
+                  <div class="card text-bg-dark">
+                    <img
+                      src="./assets/img/picadas/edit_picada_03.png"
+                      class="card-img object-fit-contain border rounded"
+                      alt="..."
+                    />
+                    <div class="card-img-overlay">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">
+                        This is a wider card with supporting text below as a
+                        natural lead-in to additional content. This content is a
+                        little bit longer.
+                      </p>
+                      <p class="card-text">
+                        <small>Last updated 3 mins ago</small>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselExampleRide"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselExampleRide"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </section>
+      <!--VINOS-->
+      <section class="bg-black">
+        <div class="bg-danger w-25 text-white"><h2>Nuestros vinos</h2></div>
+        <div class="fs-3 d-flex justify-content-end">
+          <p class="text-white">¿Con qué vas a acompañar tu picada hoy?</p>
+        </div>
+        <div class="card-group me-5 ms-5">
+          <div class="card m-5 bg-dark">
+            <img
+              src="./assets/img/vinos/vinosB.png"
+              class="card-img-top p-3"
+              alt="Vinos Blancos"
+            />
+            <div class="card-body">
+              <h5 class="card-title text-center text-white fs-2">
+                Vinos Blancos
+              </h5>
+            </div>
+          </div>
+          <div class="card m-5 bg-dark">
+            <img
+              src="./assets/img/vinos/vinosT.png"
+              class="card-img-top p-3"
+              alt="Vinos Tintos"
+            />
+            <div class="card-body">
+              <h5 class="card-title text-center text-white fs-2">
+                Vinos Tintos
+              </h5>
+            </div>
+          </div>
+          <div class="card m-5 bg-dark">
+            <img
+              src="./assets/img/vinos/aperitivos.png"
+              class="card-img-top p-3"
+              alt="Aperitivos"
+            />
+            <div class="card-body">
+              <h5 class="card-title text-center text-white fs-2">Aperitivos</h5>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--ALMACEN-->
+      <section>
+        <div class="bg-danger w-25 text-white"><h2>Almacén</h2></div>
+        <div class="fs-3 d-flex justify-content-end">
+          <p class="">Gran variedad de productos</p>
+        </div>
+        <div class="row d-flex justify-content-evenly">
+          <img
+            src="./assets/img/almacen/almacen.png"
+            class="img-thumbnail col-1 w-50"
+            alt="Almacén"
+          />
+          <div class="col-2">
+            <ul>
+              <li>Galletitas</li>
+              <li>Golosinas</li>
+              <li>Papas Fritas</li>
+              <li>Harina</li>
+              <li>Yerba</li>
+              <li>Azúcar</li>
+              <li>Sal</li>
+              <li>Polenta</li>
+              <li>Fideos</li>
+              <li>Lentejas</li>
+              <li>Gaseosas</li>
+              <li>Jugos</li>
+              <li>Productos de Limpieza</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
