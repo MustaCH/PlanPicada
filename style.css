@@ -52,22 +52,12 @@
   list-style-type: none;
 }
 
-@media screen and (min-width: 576px) {
-  .carousel-inner {
-    display: flex;
+@media screen and (max-width: 576px) {
+  #logo {
+    width: 15%;
   }
 
-  .carousel-item {
-    display: block;
-    margin-right: 0;
-    flex: 0 0 calc(100% / 3);
+  .carouselDesk {
+    display: none;
   }
-}
-
-.carousel-inner {
-  padding: 1em;
-}
-
-.card {
-  margin: 0.5em;
 }
