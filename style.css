@@ -11,9 +11,33 @@
   color: #f0e368;
 }
 
+.navbar-nav .nav-link.custom-active {
+  color: #f0e368;
+}
+
 .nav-item {
   color: white;
   font-family: "Inter", sans-serif;
+}
+
+.dropdown-menu .dropdown-item.custom-hover {
+  color: white;
+  transition: color 0.3s;
+}
+
+.dropdown-menu .dropdown-item.custom-hover:hover,
+.dropdown-menu .dropdown-item.custom-hover:focus {
+  color: #f0e368; /* Cambia el color del texto según tu preferencia */
+  background-color: transparent; /* Evita el cambio de color de fondo a blanco */
+}
+
+#btn-header {
+  -webkit-text-stroke: 0.8px black;
+  color: white;
+  font-weight: bold;
+  background-color: #850000;
+  padding: 0 2% 0 2%;
+  border-radius: 1em;
 }
 
 .carouselMob {
@@ -61,9 +85,18 @@
   list-style-type: none;
 }
 
-@media only screen and (min-width: 360px) and (max-width: 768px) {
+#almacListCont {
+  background-color: #490909;
+  height: fit-content;
+}
+
+@media only screen and (min-width: 280px) and (max-width: 768px) {
   #logo {
     width: 15%;
+  }
+
+  #btn-header-cont {
+    justify-items: center;
   }
 
   .carouselDesk {
