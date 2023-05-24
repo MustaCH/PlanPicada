@@ -1,5 +1,9 @@
 .body {
-  font-family: "Inter-Regular", sans-serif;
+  font-family: "Inter", sans-serif;
+}
+
+.nav-item {
+  font-family: "Inter", sans-serif;
 }
 
 .carouselMob {
@@ -39,6 +43,7 @@
 
 #almacImg {
   background-color: #490909;
+  height: fit-content;
 }
 
 #almacList {
@@ -57,5 +62,14 @@
 
   .carouselMob {
     display: inline;
+  }
+
+  #almacen {
+    flex-direction: column;
+  }
+
+  #almacList {
+    padding: 0%;
+    text-align: center;
   }
 }
