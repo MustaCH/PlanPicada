@@ -120,3 +120,43 @@
     text-align: center;
   }
 }
+
+.container {
+  width: 90%;
+  overflow: hidden;
+  padding: 3% 0 5% 0;
+}
+.container .swiper-container {
+  width: 100%;
+  height: 100%;
+}
+.container .swiper-slide {
+  position: relative;
+  text-align: center;
+  font-size: 18px;
+  background-image: url("./assets/img/picadas/edit_picada_01.png");
+  border-radius: 15px;
+  text-align: start;
+  box-shadow: 0px 4px 4px rgba(196, 196, 196, 0.25);
+}
+
+.container .swiper-slide .card-description {
+  padding: 4rem;
+}
+.container .swiper-slide .card-title,
+.container .swiper-slide .card-text {
+  margin-bottom: 0.5rem;
+}
+.container .swiper-slide .card-link {
+  text-align: center;
+}
+.container .swiper-slide .card-link a {
+  text-decoration: none;
+  color: #1d6ce2;
+}
+.swiper-button-next {
+  right: 26px !important;
+}
+.swiper-button-prev {
+  left: 26px !important;
+}
