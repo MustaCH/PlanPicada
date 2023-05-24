@@ -32,7 +32,12 @@
     <header class="bg-black">
       <nav class="navbar navbar-expand-lg bg-body-black">
         <div class="container-fluid">
-          <img src="./assets/img/logo-header.png" alt="logo" id="logo" />
+          <img
+            src="./assets/img/logo-header.png"
+            alt="logo"
+            id="logo"
+            class="pb-xxl-3 pt-xxl-3"
+          />
           <button
             class="navbar-toggler"
             type="button"
@@ -46,16 +51,16 @@
           </button>
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ms-auto text-end">
-              <li class="nav-item">
+              <li class="nav-item pe-xl-5">
                 <a class="nav-link text-white fs-5" aria-current="page" href="#"
-                  >Home</a
+                  >HOME</a
                 >
               </li>
-              <li class="nav-item">
-                <a class="nav-link text-white fs-5" href="#">Productos</a>
+              <li class="nav-item pe-xl-5">
+                <a class="nav-link text-white fs-5" href="#">PRODUCTOS</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link text-white fs-5" href="#">Contacto</a>
+              <li class="nav-item pe-xl-5">
+                <a class="nav-link text-white fs-5" href="#">CONTACTO</a>
               </li>
             </ul>
           </div>
@@ -64,12 +69,12 @@
       <div
         id="carouselExampleSlidesOnly"
         class="carousel slide carouselDesk"
-        data-bs-ride="carousel"
+        data-interval="false"
       >
         <div class="carousel-inner">
           <div class="carousel-item active">
             <img
-              src="./assets/img/banner-web.png"
+              src="./assets/img/banner-desk/banner-desk.jpg"
               class="d-block w-100"
               alt="..."
             />
@@ -127,9 +132,9 @@
     </header>
     <main>
       <!--PICADAS-->
-      <section id="picadas">
-        <div class="bg-danger w-50">
-          <h2 class="sectionTitle text-white text-center" id="picadTitle">
+      <section class="sectionBg1">
+        <div class="w-50 sectionTitleBg">
+          <h2 class="sectionTitle text-white text-start ps-3" id="picadTitle">
             Nuestras Picadas de Autor
           </h2>
         </div>
@@ -243,9 +248,9 @@
         </div>
       </section>
       <!--VINOS-->
-      <section id="vinos">
-        <div class="bg-danger w-25 text-white">
-          <h2 class="sectionTitle text-center" id="vinosTitle">
+      <section class="sectionBg2">
+        <div class="w-25 sectionTitleBg">
+          <h2 class="sectionTitle text-white text-start ps-3" id="vinosTitle">
             Nuestros vinos
           </h2>
         </div>
@@ -254,7 +259,7 @@
             ¿Con qué vas a acompañar tu picada hoy?
           </p>
         </div>
-        <div class="card-group me-5 ms-5">
+        <div class="card-group me-xl-5 ms-xl-5 pb-4">
           <div class="card m-5 mb-10 bg-dark">
             <img
               src="./assets/img/vinos/vinosB.png"
@@ -292,9 +297,11 @@
         </div>
       </section>
       <!--ALMACEN-->
-      <section id="almacen">
-        <div class="bg-danger w-25 text-white">
-          <h2 class="sectionTitle text-center" id="almacTitle">Almacén</h2>
+      <section class="sectionBg1">
+        <div class="w-25 sectionTitleBg">
+          <h2 class="sectionTitle text-white text-start ps-3" id="almacTitle">
+            Almacén
+          </h2>
         </div>
         <div class="fs-3 d-flex justify-content-end">
           <p class="sectionSubtitle fs-2 text-white">
@@ -310,7 +317,7 @@
             />
           </div>
           <div>
-            <ul class="text-white p-5" id="almacList">
+            <ul class="text-white pe-5 pt-5 pb-5" id="almacList">
               <li>Galletitas</li>
               <li>Golosinas</li>
               <li>Papas Fritas</li>

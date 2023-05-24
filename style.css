@@ -4,6 +4,12 @@
 
 .sectionTitle {
   font-family: "Inter", bold;
+  font-weight: bolder;
+  font-size: 3rem;
+}
+
+.sectionTitleBg {
+  background-color: #3c0707;
 }
 
 .sectionSubtitle {
@@ -11,36 +17,20 @@
   padding-right: 10%;
 }
 
+.sectionBg1 {
+  background-color: #250d0d;
+}
+
+.sectionBg2 {
+  background-color: #111010;
+}
+
 #logo {
   width: 5%;
 }
 
-#picadas {
-  background-color: #250d0d;
-}
-
-#picadTitle {
-  background-color: #3c0707;
-}
-
 .cardPicadas {
   background-image: url("./assets/img/picadas/edit_picada_01.png");
-}
-
-#vinos {
-  background-color: #111010;
-}
-
-#vinosTitle {
-  background-color: #3c0707;
-}
-
-#almacen {
-  background-color: #250d0d;
-}
-
-#almacTitle {
-  background-color: #3c0707;
 }
 
 #almacImg {
@@ -58,6 +48,12 @@
   }
 
   .carouselDesk {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .carouselMob {
     display: none;
   }
 }
