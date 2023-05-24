@@ -2,6 +2,10 @@
   font-family: "Inter-Regular", sans-serif;
 }
 
+.carouselMob {
+  display: none;
+}
+
 .sectionTitle {
   font-family: "Inter", bold;
   font-weight: bolder;
@@ -42,7 +46,7 @@
   list-style-type: none;
 }
 
-@media screen and (max-width: 576px) {
+@media only screen and (min-width: 360px) and (max-width: 768px) {
   #logo {
     width: 15%;
   }
@@ -50,10 +54,8 @@
   .carouselDesk {
     display: none;
   }
-}
 
-@media screen and (min-width: 1400px) {
   .carouselMob {
-    display: none;
+    display: inline;
   }
 }
