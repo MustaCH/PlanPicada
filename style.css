@@ -95,6 +95,7 @@
 .accordion {
   width: 20%;
   --bs-accordion-active-bg: #f0e368;
+  --bs-accordion-btn-icon: url(http://www.w3.org/2000/svg"width="16"height="16"fill="warning"class="bibi-chevron-down"viewBox="001616);
 }
 
 .accordion-item {
