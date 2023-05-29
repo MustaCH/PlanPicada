@@ -27,8 +27,8 @@
 
 .dropdown-menu .dropdown-item.custom-hover:hover,
 .dropdown-menu .dropdown-item.custom-hover:focus {
-  color: #f0e368; /* Cambia el color del texto según tu preferencia */
-  background-color: transparent; /* Evita el cambio de color de fondo a blanco */
+  color: #f0e368;
+  background-color: transparent;
 }
 
 #btn-header-cont {
@@ -39,11 +39,10 @@
   color: white;
   font-weight: bold;
   background-color: #850000;
-  padding: 0 2% 0 2%;
+  padding: 0.5% 5% 0.5% 5%;
   border-radius: 0;
-  box-shadow: 5px 8px 4px -3px rgba(240, 227, 104, 0.56);
-  -webkit-box-shadow: 5px 8px 4px -3px rgba(240, 227, 104, 0.56);
-  -moz-box-shadow: 5px 8px 4px -3px rgba(240, 227, 104, 0.56);
+  -webkit-clip-path: polygon(4% 0, 100% 0%, 100% 100%, 0% 100%);
+  clip-path: polygon(4% 0, 100% 0%, 100% 100%, 0% 100%);
 }
 
 .carouselMob {
@@ -146,6 +145,7 @@
   text-align: center;
   text-align: start;
   justify-content: center;
+  margin-right: 2%;
 }
 
 .container .swiper-slide img {
