@@ -1,6 +1,46 @@
+/*ESTILOS GLOBALES*/
+
 .body {
   font-family: "Inter", sans-serif;
 }
+
+.sectionTitle {
+  font-family: "Inter", bold;
+  font-weight: bolder;
+  font-size: 3rem;
+}
+
+.sectionTitleBg {
+  background-color: #3c0707;
+}
+
+.sectionSubtitle {
+  font-family: "Grape Nuts", cursive;
+  padding-right: 10%;
+}
+
+.sectionBg1 {
+  background-color: #250d0d;
+}
+
+.sectionBg2 {
+  background-color: #111010;
+}
+
+.sectionBg3 {
+  background-color: #150202;
+}
+
+#logo {
+  width: 5%;
+}
+
+i {
+  color: white;
+  padding: 5%;
+}
+
+/*HEADER-NAV*/
 
 .nav-link {
   color: white;
@@ -49,116 +89,7 @@
   display: none;
 }
 
-.sectionTitle {
-  font-family: "Inter", bold;
-  font-weight: bolder;
-  font-size: 3rem;
-}
-
-.sectionTitleBg {
-  background-color: #3c0707;
-}
-
-.sectionSubtitle {
-  font-family: "Grape Nuts", cursive;
-  padding-right: 10%;
-}
-
-.sectionBg1 {
-  background-color: #250d0d;
-}
-
-.sectionBg2 {
-  background-color: #111010;
-}
-
-#logo {
-  width: 5%;
-}
-
-.cardPicadas {
-  background-image: url("./assets/img/picadas/edit_picada_01.png");
-}
-
-#almacImg {
-  background-color: #490909;
-  display: flex;
-  justify-content: center;
-  height: fit-content;
-  width: fit-content;
-}
-
-#almacImg img {
-  width: 85%;
-}
-
-.accordion {
-  width: 20%;
-  --bs-accordion-border-color: #250d0d;
-  --bs-accordion-active-bg: #f0e368;
-}
-
-.accordion-item {
-  background-color: #250d0d;
-}
-
-.accordion-button {
-  background-color: #490909;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 600;
-  color: white;
-}
-
-.accordion-button:is(.collapsed)::after {
-  background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23f0e368'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>") !important;
-}
-
-.accordion-button::after {
-  color: white;
-}
-
-.accordion-body {
-  background-color: #490909;
-  font-family: "Montserrat", sans-serif;
-  color: white;
-}
-
-#almacList {
-  background-color: #490909;
-  list-style-type: none;
-}
-
-#almacListCont {
-  background-color: #490909;
-  height: 100%;
-}
-
-@media only screen and (min-width: 280px) and (max-width: 768px) {
-  #logo {
-    width: 15%;
-  }
-
-  #btn-header-cont {
-    justify-content: center;
-  }
-
-  .carouselDesk {
-    display: none;
-  }
-
-  .carouselMob {
-    display: inline;
-  }
-
-  #almacen {
-    flex-direction: column;
-  }
-
-  #almacList {
-    padding: 0%;
-    text-align: center;
-  }
-}
+/*PICADAS*/
 
 .container {
   overflow: hidden;
@@ -246,4 +177,78 @@
 :root {
   --swiper-theme-color: #fff27c;
   --swiper-pagination-bullet-inactive-color: #f8f8f8;
+}
+
+/*ALMACEN*/
+
+#almacImg {
+  background-color: #490909;
+  display: flex;
+  justify-content: center;
+  height: fit-content;
+  width: fit-content;
+}
+
+#almacImg img {
+  width: 85%;
+}
+
+.accordion {
+  width: 20%;
+  --bs-accordion-border-color: #250d0d;
+  --bs-accordion-active-bg: #f0e368;
+}
+
+.accordion-item {
+  background-color: #250d0d;
+}
+
+.accordion-button {
+  background-color: #490909;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  color: white;
+}
+
+.accordion-button:is(.collapsed)::after {
+  background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23f0e368'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>") !important;
+}
+
+.accordion-button::after {
+  color: white;
+}
+
+.accordion-body {
+  background-color: #490909;
+  font-family: "Montserrat", sans-serif;
+  color: white;
+}
+
+/*MEDIA QUERIE MOBILE*/
+
+@media only screen and (min-width: 280px) and (max-width: 768px) {
+  #logo {
+    width: 15%;
+  }
+
+  #btn-header-cont {
+    justify-content: center;
+  }
+
+  .carouselDesk {
+    display: none;
+  }
+
+  .carouselMob {
+    display: inline;
+  }
+
+  #almacen {
+    flex-direction: column;
+  }
+
+  .accordion {
+    width: 100%;
+    padding-top: 3%;
+  }
 }
