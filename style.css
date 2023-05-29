@@ -36,12 +36,14 @@
 }
 
 #btn-header {
-  -webkit-text-stroke: 0.8px black;
   color: white;
   font-weight: bold;
   background-color: #850000;
   padding: 0 2% 0 2%;
-  border-radius: 1em;
+  border-radius: 0;
+  box-shadow: 5px 7px 19px -3px rgba(240, 227, 104, 0.56);
+  -webkit-box-shadow: 5px 7px 19px -3px rgba(240, 227, 104, 0.56);
+  -moz-box-shadow: 5px 7px 19px -3px rgba(240, 227, 104, 0.56);
 }
 
 .carouselMob {
@@ -126,12 +128,13 @@
   padding: 3% 0 5% 0;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 .swiper {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-content: center;
 }
 
 .container .swiper-container {
@@ -139,8 +142,10 @@
   height: 100%;
 }
 .container .swiper-slide {
+  display: flex;
   text-align: center;
   text-align: start;
+  justify-content: center;
 }
 
 .container .swiper-slide img {
@@ -152,13 +157,15 @@
   margin-bottom: 0.5rem;
 }
 
-.swiper-button-next {
-  right: 0 !important;
-}
-.swiper-button-prev {
-  left: 0 !important;
+.swiper-pagination {
+  position: relative;
+  padding-top: 3%;
+  text-align: center;
+  transform: translate3d(0px, 0px, 0px);
+  z-index: 10;
+  transition: opacity 0.3s ease 0s;
 }
 
-.swiper-hero .swiper-button-prev {
-  --swiper-theme-color: #490909 !important;
+:root {
+  --swiper-theme-color: #fff27c;
 }

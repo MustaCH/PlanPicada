@@ -15,9 +15,8 @@ navLinks.forEach(function (navLink) {
 //CARRUSEL PICADAS
 
 const swiper = new Swiper(".swiper-container", {
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
+  autoplay: {
+    delay: 2000,
   },
   slidesPerView: 1,
   spaceBetween: 10,
