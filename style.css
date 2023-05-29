@@ -41,9 +41,9 @@
   background-color: #850000;
   padding: 0 2% 0 2%;
   border-radius: 0;
-  box-shadow: 5px 7px 19px -3px rgba(240, 227, 104, 0.56);
-  -webkit-box-shadow: 5px 7px 19px -3px rgba(240, 227, 104, 0.56);
-  -moz-box-shadow: 5px 7px 19px -3px rgba(240, 227, 104, 0.56);
+  box-shadow: 5px 8px 4px -3px rgba(240, 227, 104, 0.56);
+  -webkit-box-shadow: 5px 8px 4px -3px rgba(240, 227, 104, 0.56);
+  -moz-box-shadow: 5px 8px 4px -3px rgba(240, 227, 104, 0.56);
 }
 
 .carouselMob {
@@ -148,9 +148,48 @@
   justify-content: center;
 }
 
-.container .swiper-slide .card-title,
-.container .swiper-slide .card-text {
-  margin-bottom: 0.5rem;
+.container .swiper-slide img {
+  width: 100%;
+  height: 100%;
+  transition: all 500ms ease-out;
+  cursor: pointer;
+}
+
+.text-card-cont {
+  position: absolute;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: rgba(17, 16, 16, 0.79);
+  transition: all 500ms ease-out;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.container .swiper-slide:hover .text-card-cont {
+  opacity: 1;
+  visibility: visible;
+}
+
+.text-card-cont h3 {
+  font-family: "Grape Nuts", cursive;
+  color: white;
+}
+
+.text-card-cont ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+}
+
+.text-card-cont ul li {
+  text-align: left;
+  list-style-type: none;
+  font-family: "Inter", sans-serif;
+  color: white;
 }
 
 .swiper-pagination {
@@ -164,4 +203,5 @@
 
 :root {
   --swiper-theme-color: #fff27c;
+  --swiper-pagination-bullet-inactive-color: #f8f8f8;
 }
