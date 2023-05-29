@@ -157,7 +157,7 @@
         class="d-flex flex-row justify-content-end"
         id="btn-header-cont"
       >
-        <button type="button" id="btn-header" class="btn fs-4">
+        <button type="button" id="btn-header" class="btn fs-4 fs-md-5 fs-sm-5">
           Pedí una picada personalizada
         </button>
       </div>
@@ -300,7 +300,7 @@
       <section class="sectionBg2" id="vinos">
         <div class="w-25 sectionTitleBg">
           <h2 class="sectionTitle text-white text-start ps-3" id="vinosTitle">
-            Vinos
+            Vinos & Aperitivos
           </h2>
         </div>
         <div class="fs-3 d-flex justify-content-end">
@@ -367,22 +367,67 @@
               alt="Almacén"
             />
           </div>
-          <div id="almacListCont">
-            <ul class="text-white pe-5 pt-5 pb-5 mb-0" id="almacList">
-              <li>Galletitas</li>
-              <li>Golosinas</li>
-              <li>Papas Fritas</li>
-              <li>Harina</li>
-              <li>Yerba</li>
-              <li>Azúcar</li>
-              <li>Sal</li>
-              <li>Polenta</li>
-              <li>Fideos</li>
-              <li>Lentejas</li>
-              <li>Gaseosas</li>
-              <li>Jugos</li>
-              <li>Productos de Limpieza</li>
-            </ul>
+          <div class="accordion accordion-flush" id="accordionFlushExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                  Almacén
+                </button>
+              </h2>
+              <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">                
+                  <p>Fideos - Arroz - Aceite - Y más...</p>               
+              </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                  Kiosco
+                </button>
+              </h2>
+              <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">               
+                  <p>Cif crema - Lavandina - Limpia vidrios - Y más...</p>
+              </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                  Fiambería
+                </button>
+              </h2>
+              <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">
+                    <p>Café - Mermelada - Yerba - Y más...</p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                  Limpieza
+                </button>
+              </h2>
+              <div id="flush-collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">                
+                  <p>Fideos - Arroz - Aceite - Y más...</p>               
+              </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
+                  Otros
+                </button>
+              </h2>
+              <div id="flush-collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">                
+                  <p>Fideos - Arroz - Aceite - Y más...</p>               
+              </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>

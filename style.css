@@ -92,6 +92,32 @@
   width: 85%;
 }
 
+.accordion {
+  width: 20%;
+  --bs-accordion-active-bg: #f0e368;
+}
+
+.accordion-item {
+  background-color: #250d0d;
+}
+
+.accordion-button {
+  background-color: #490909;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  color: white;
+}
+
+.accordion-button::after {
+  color: white;
+}
+
+.accordion-body {
+  background-color: #490909;
+  font-family: "Montserrat", sans-serif;
+  color: white;
+}
+
 #almacList {
   background-color: #490909;
   list-style-type: none;
@@ -153,6 +179,7 @@
   text-align: start;
   justify-content: center;
   margin-right: 2%;
+  border: 1.5em solid #ffa533;
 }
 
 .container .swiper-slide img {
