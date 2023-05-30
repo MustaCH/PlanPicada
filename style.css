@@ -4,6 +4,11 @@
   font-family: "Inter", sans-serif;
 }
 
+header {
+  position: relative;
+  z-index: 99999;
+}
+
 .sectionTitle {
   font-family: "Inter", bold;
   font-weight: bolder;
@@ -37,7 +42,7 @@
 
 i {
   color: white;
-  padding: 5%;
+  padding: 5% 1% 0% 5%;
 }
 
 /*HEADER-NAV*/
@@ -72,7 +77,7 @@ i {
 }
 
 #btn-header-cont {
-  padding: 3% 0% 3% 3%;
+  padding: 3.5% 0% 3.5% 3%;
 }
 
 #btn-header {
@@ -115,7 +120,7 @@ i {
   text-align: start;
   justify-content: center;
   margin-right: 2%;
-  border: 1.5em solid #ffa533;
+  border: 1.5em solid #f0e368;
 }
 
 .container .swiper-slide img {
@@ -231,6 +236,17 @@ i {
 
 /*FOOTER*/
 
+.back-to-top {
+  position: fixed;
+  display: block;
+  right: 1px;
+  bottom: 1px;
+  z-index: 99998;
+  text-decoration: none;
+  background-color: transparent;
+  border-radius: 50%;
+}
+
 #logoB4 {
   width: 10%;
 }
@@ -302,5 +318,9 @@ i {
 
   #logoB4 {
     width: 10%;
+  }
+
+  .back-to-top {
+    display: none;
   }
 }
