@@ -195,8 +195,13 @@ i {
 
 .accordion {
   width: 20%;
+  --bs-body-color: #250d0d;
   --bs-accordion-border-color: #250d0d;
   --bs-accordion-active-bg: #f0e368;
+  --bs-accordion-active-color: #250d0d;
+  --bs-accordion-btn-focus-border-color: #250d0d;
+  --bs-accordion-btn-focus-box-shadow: rgba(37, 13, 13, 0.25);
+  --bs-accordion-btn-active-icon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23250d0d'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
 }
 
 .accordion-item {
@@ -222,6 +227,12 @@ i {
   background-color: #490909;
   font-family: "Montserrat", sans-serif;
   color: white;
+}
+
+/*FOOTER*/
+
+#logoB4 {
+  width: 10%;
 }
 
 /*MEDIA QUERIE MOBILE*/
@@ -287,5 +298,9 @@ i {
 
   #infoContacto div a {
     padding: 15%;
+  }
+
+  #logoB4 {
+    width: 10%;
   }
 }
