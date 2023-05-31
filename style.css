@@ -19,9 +19,19 @@ header {
   background-color: #3c0707;
 }
 
+.sectionPicadTit {
+  width: 50%;
+}
+
+.sectionVinosTit,
+.sectionAlmacTit {
+  width: 35%;
+}
+
 .sectionSubtitle {
   font-family: "Grape Nuts", cursive;
   padding-right: 10%;
+  font-size: 2.2rem;
 }
 
 .sectionBg1 {
@@ -281,6 +291,30 @@ i {
 
   #btn-header-cont {
     justify-content: center;
+  }
+
+  #picadTitle,
+  #vinosTitle,
+  #almacTitle {
+    font-size: 2rem;
+  }
+
+  .sectionPicadTit {
+    width: 100%;
+  }
+
+  .sectionVinosTit {
+    width: 90%;
+  }
+
+  .sectionAlmacTit {
+    width: 70%;
+  }
+
+  .sectionSubtitle {
+    font-size: 1.3rem;
+    text-align: end;
+    padding-right: 2%;
   }
 
   .carouselDesk {
