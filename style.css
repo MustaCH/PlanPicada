@@ -289,7 +289,7 @@ i {
 
 /*MEDIA QUERIE MOBILE*/
 
-@media only screen and (min-width: 280px) and (max-width: 768px) {
+@media only screen and (min-width: 280px) and (max-width: 767px) {
   #logo {
     width: 15%;
   }
@@ -347,6 +347,106 @@ i {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+  }
+
+  iframe {
+    width: 100%;
+    height: 100%;
+  }
+
+  #pedido {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  #infoContacto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10%;
+    padding-bottom: 10%;
+    text-align: center;
+  }
+
+  #infoContacto div {
+    display: flex;
+    flex-direction: row;
+  }
+
+  #infoContacto div a {
+    padding: 15%;
+  }
+
+  #logoB4 {
+    width: 10%;
+  }
+
+  .back-to-top {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  #logo {
+    width: 15%;
+  }
+
+  #btn-header-cont {
+    justify-content: center;
+  }
+
+  #btn-header {
+    font-size: 1.1rem;
+  }
+
+  #picadTitle,
+  #vinosTitle,
+  #almacTitle {
+    font-size: 2rem;
+  }
+
+  .sectionPicadTit {
+    width: 75%;
+  }
+
+  .sectionVinosTit {
+    width: 50%;
+  }
+
+  .sectionAlmacTit {
+    width: 50%;
+  }
+
+  .sectionSubtitle {
+    font-size: 1.3rem;
+    text-align: end;
+    padding-right: 2%;
+  }
+
+  .carouselMob {
+    display: none;
+  }
+
+  #almacen {
+    flex-direction: column;
+  }
+
+  .accordion {
+    width: 100%;
+    padding-top: 0%;
+  }
+
+  #containerContacto {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #containerMapa {
+    width: 80%;
   }
 
   iframe {
