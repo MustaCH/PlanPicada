@@ -234,6 +234,27 @@ i {
   color: white;
 }
 
+/*CONTACTO*/
+
+.hover-text {
+  color: white;
+  cursor: pointer;
+  transition: color 500ms ease;
+}
+
+.hover-text:hover {
+  color: #f0e368;
+}
+
+.hover-image {
+  cursor: pointer;
+  transition: transform 500ms ease;
+}
+
+.hover-image:hover {
+  transform: scale(1.2);
+}
+
 /*FOOTER*/
 
 .back-to-top {
