@@ -93,6 +93,7 @@ i {
 #btn-header {
   color: white;
   font-weight: bold;
+  font-size: 1.8rem;
   background-color: #850000;
   padding: 0.5% 5% 0.5% 5%;
   border-radius: 0;
@@ -295,6 +296,10 @@ i {
 
   #btn-header-cont {
     justify-content: center;
+  }
+
+  #btn-header {
+    font-size: 1.1rem;
   }
 
   #picadTitle,
